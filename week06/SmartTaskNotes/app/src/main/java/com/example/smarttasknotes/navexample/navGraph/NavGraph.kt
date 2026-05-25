@@ -53,7 +53,7 @@ fun NavGraph(
             ScreenC(onNavigate = {navController.navigate(route = Home)})
         }
         composable<D>{
-            ScreenD()
+            ScreenD(onNavigate = {navController.navigate(Home)})
         }
 
     }

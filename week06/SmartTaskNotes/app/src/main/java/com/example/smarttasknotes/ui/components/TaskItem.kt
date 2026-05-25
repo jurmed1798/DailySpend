@@ -3,6 +3,7 @@ package com.example.smarttasknotes.ui.components
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -18,7 +19,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.smarttasknotes.data.mock.MockDataFactory
 import com.example.smarttasknotes.data.model.TaskNoteType
 
 @Composable
@@ -75,14 +78,14 @@ fun TaskItem(
     }
 }
 
-//@Preview
-//@Composable
-//private fun TaskItemPreview() {
-//    val items = MockDataFactory.getDataList().filterIsInstance<TaskNoteType.Task>()
-//    Column {
-//        TaskItem(item = items[0], toggleTaskDone = {})
-//        Spacer(modifier = Modifier.padding(8.dp))
-//        TaskItem(item = items[1], toggleTaskDone = {})
-//    }
-//}
+@Preview
+@Composable
+private fun TaskItemPreview() {
+    val items = MockDataFactory.getDataList().filterIsInstance<TaskNoteType.Task>()
+    Column {
+        TaskItem(item = items[0], toggleTaskDone = {},{})
+        Spacer(modifier = Modifier.padding(8.dp))
+        TaskItem(item = items[1], toggleTaskDone = {},{})
+    }
+}
 

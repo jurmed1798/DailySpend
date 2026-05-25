@@ -37,5 +37,5 @@ fun NoteItem(item: TaskNoteType.Note,
 @Preview (showBackground = true)
 @Composable
 fun NoteItemPreview() {
-    NoteItem(MockDataFactory.getDataList()[1] as TaskNoteType.Note)
+    NoteItem(MockDataFactory.getDataList()[2] as TaskNoteType.Note)
 }

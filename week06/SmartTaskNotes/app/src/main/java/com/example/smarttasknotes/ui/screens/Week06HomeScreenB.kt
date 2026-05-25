@@ -104,12 +104,11 @@ fun Week06HomeScreenB(
     }
 }
 
-//@Preview
-//@Composable
-//private fun Week06HomeScreenBPreview() {
-//    val vm: TaskNoteViewModelB =viewModel()
-//    Week06HomeScreenB(
-//        vm.homeUiState,
-//        vm.homeUiActions
-//    )
-//}
+@Preview
+@Composable
+private fun Week06HomeScreenBPreview() {
+    val vm: TaskNoteViewModelB =viewModel()
+    Week06HomeScreenB(
+        vm.homeUiState,
+        vm.homeUiActions,{})
+}

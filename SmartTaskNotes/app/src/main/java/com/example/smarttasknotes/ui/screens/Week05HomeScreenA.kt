@@ -190,7 +190,7 @@ fun Week05HomeScreenA(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview
+@Preview(showBackground=true )
 @Composable
 private fun Week05HomeScreenAPreview() {
     Week05HomeScreenA()

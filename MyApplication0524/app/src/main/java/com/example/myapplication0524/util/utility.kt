@@ -5,3 +5,5 @@ import java.time.format.DateTimeFormatter
 
 fun nowText(): String= LocalDateTime.now()
     .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"))
+fun nowDate(): String=LocalDateTime.now()
+    .format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))

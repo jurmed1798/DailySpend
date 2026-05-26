@@ -18,6 +18,7 @@ import androidx.compose.ui.text.font.FontWeight.Companion.ExtraBold
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.myapplication0524.components.DateTimeHome
 import com.example.myapplication0524.components.MainButtons
 
 @Composable
@@ -50,6 +51,7 @@ fun HomeScreen(onNavigateExpense: ()-> Unit){
     ){
         inner->
         Column(modifier=Modifier.fillMaxSize().padding(inner).padding(15.dp)){
+            DateTimeHome()
 
         }
     }
